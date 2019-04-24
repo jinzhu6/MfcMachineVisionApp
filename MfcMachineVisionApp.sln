@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MfcMachineVisionApp", "MfcMachineVisionApp\MfcMachineVisionApp.vcxproj", "{91C90CB0-3215-48F4-88BB-9C2C892445A1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "..\Project1\Project1\Project1.vcxitems", "{EC0B4CDF-E24D-46BA-9278-BC49E66CE7CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

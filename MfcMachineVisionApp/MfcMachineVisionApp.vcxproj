@@ -79,14 +79,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <ReferencePath>C:\Users\zhang\source\repos;$(ReferencePath)</ReferencePath>
+    <ReferencePath>C:\Users\zhang\source\repos\Project1\Project1;C:\Users\zhang\source\repos;C:\Users\zhang\source\repos\Project1;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <ReferencePath>C:\Users\zhang\source\repos;$(ReferencePath)</ReferencePath>
+    <ReferencePath>C:\Users\zhang\source\repos\Project1\Project1;C:\Users\zhang\source\repos;C:\Users\zhang\source\repos\Project1;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
