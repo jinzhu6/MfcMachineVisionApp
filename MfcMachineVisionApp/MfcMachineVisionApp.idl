@@ -1,0 +1,29 @@
+﻿// MfcMachineVisionApp.idl: MfcMachineVisionApp.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(MfcMachineVisionApp.tlb)。
+
+[ uuid(d1aead4f-348a-4925-afcf-b412c694155b), version(1.0) ]
+library MfcMachineVisionApp
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CMfcMachineVisionAppDoc 的主调度接口
+
+	[ uuid(bea6719b-f874-41e4-bc3b-2b4a1e4b61ff) ]
+	dispinterface IMfcMachineVisionApp
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CMfcMachineVisionAppDoc 的类信息
+
+	[ uuid(f80aa0dc-c5b2-47c9-983d-187a5f132977) ]
+	coclass MfcMachineVisionApp
+	{
+		[default] dispinterface IMfcMachineVisionApp;
+	};
+};
