@@ -112,6 +112,12 @@ BOOL CMfcMachineVisionAppDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
+	m_pCCDdlg.push_back(new CMVdlg);
+
+	m_pCCDdlg[0]->Create(IDD_DIALOG_CCD,this);
+	m_pCCDdlg[0]->ShowWindow(SW_SHOW);
+
+
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -173,15 +179,11 @@ HCURSOR CMfcMachineVisionAppDlg::OnQueryDragIcon()
 
 void CMfcMachineVisionAppDlg::OnClose()
 {
+	delete m_pCCDdlg[0];
 	if (CanExit())
 		CDialogEx::OnClose();
 }
 
-void CMfcMachineVisionAppDlg::OnOK()
-{
-	if (CanExit())
-		CDialogEx::OnOK();
-}
 
 void CMfcMachineVisionAppDlg::OnCancel()
 {

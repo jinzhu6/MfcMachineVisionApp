@@ -121,10 +121,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>C:\Program Files\Daheng Imaging\GalaxySDK\Samples\C++ SDK\inc;D:\SDK\opencv\build\include;D:\SDK\opencv\build\include\opencv2</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>C:\Program Files\Daheng Imaging\GalaxySDK\Samples\C++ SDK\lib\x64;D:\SDK\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world410d.lib;</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -178,12 +181,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>C:\Program Files\Daheng Imaging\GalaxySDK\Samples\C++ SDK\inc;D:\SDK\opencv\build\include;D:\SDK\opencv\build\include\opencv2</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>C:\Program Files\Daheng Imaging\GalaxySDK\Samples\C++ SDK\lib\x64;D:\SDK\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world410.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -199,6 +205,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CMVdlg.h" />
     <ClInclude Include="DlgProxy.h" />
     <ClInclude Include="MfcMachineVisionApp.h" />
     <ClInclude Include="MfcMachineVisionAppDlg.h" />
@@ -207,6 +214,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CMVdlg.cpp" />
     <ClCompile Include="DlgProxy.cpp" />
     <ClCompile Include="MfcMachineVisionApp.cpp" />
     <ClCompile Include="MfcMachineVisionAppDlg.cpp" />
@@ -228,6 +236,8 @@
     <ResourceCompile Include="MfcMachineVisionApp.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
     <Image Include="res\MfcMachineVisionApp.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

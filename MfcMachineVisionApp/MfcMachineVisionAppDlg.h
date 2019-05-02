@@ -2,7 +2,12 @@
 // MfcMachineVisionAppDlg.h: 头文件
 //
 
+
 #pragma once
+#include "CMVdlg.h"
+
+#include <vector>
+using std::vector;
 
 class CMfcMachineVisionAppDlgAutoProxy;
 
@@ -40,7 +45,9 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	afx_msg void OnClose();
-	virtual void OnOK();
 	virtual void OnCancel();
 	DECLARE_MESSAGE_MAP()
+
+
+	vector<CMVdlg*> m_pCCDdlg;
 };
