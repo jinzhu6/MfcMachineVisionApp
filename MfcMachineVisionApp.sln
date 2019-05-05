@@ -5,9 +5,13 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MfcMachineVisionApp", "MfcMachineVisionApp\MfcMachineVisionApp.vcxproj", "{91C90CB0-3215-48F4-88BB-9C2C892445A1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "..\Project1\Project1\Project1.vcxitems", "{EC0B4CDF-E24D-46BA-9278-BC49E66CE7CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MachineVisionShareProject", "MachineVisionShareProject\MachineVisionShareProject.vcxitems", "{2FBB6E1C-0D64-4231-B703-312F11BFC083}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MachineVisionShareProject\MachineVisionShareProject.vcxitems*{2fbb6e1c-0d64-4231-b703-312f11bfc083}*SharedItemsImports = 9
+		MachineVisionShareProject\MachineVisionShareProject.vcxitems*{91c90cb0-3215-48f4-88bb-9c2c892445a1}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86

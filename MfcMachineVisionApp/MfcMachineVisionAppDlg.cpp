@@ -7,6 +7,7 @@
 #include "MfcMachineVisionAppDlg.h"
 #include "DlgProxy.h"
 #include "afxdialogex.h"
+#include "Resource.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -77,6 +78,7 @@ BEGIN_MESSAGE_MAP(CMfcMachineVisionAppDlg, CDialogEx)
 	ON_WM_CLOSE()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_COMMAND(ID_FIND_CAM, &CMfcMachineVisionAppDlg::OnFindCam)
 END_MESSAGE_MAP()
 
 
@@ -205,3 +207,10 @@ BOOL CMfcMachineVisionAppDlg::CanExit()
 	return TRUE;
 }
 
+
+
+void CMfcMachineVisionAppDlg::OnFindCam()
+{
+	
+
+}

@@ -64,6 +64,10 @@
     <None Include="res\MfcMachineVisionApp.rc2">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="RibbonFile.mfcribbon-ms">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MfcMachineVisionApp.rc">
@@ -80,5 +84,10 @@
     <Image Include="res\bitmap2.bmp">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="XMLSchema.xsd">
+      <Filter>头文件</Filter>
+    </Xsd>
   </ItemGroup>
 </Project>

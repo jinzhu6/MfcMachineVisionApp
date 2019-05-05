@@ -50,4 +50,6 @@ protected:
 
 
 	vector<CMVdlg*> m_pCCDdlg;
+public:
+	afx_msg void OnFindCam();
 };
